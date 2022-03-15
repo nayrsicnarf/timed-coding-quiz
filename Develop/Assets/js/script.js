@@ -1,4 +1,9 @@
 // h1 tag to display the titles for the starting page and high scores page
+var h1Tag = document.createElement("h1");
+h1Tag.textContent = "Timed Coding Quiz";
+h1Tag.setAttribute("id", "title");
+h1Tag.style.textAlign = "center";
+document.body.appendChild(h1Tag);
 
 // p tag to display code quiz instructions on the starting page
 
