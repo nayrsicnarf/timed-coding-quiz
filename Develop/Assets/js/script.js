@@ -6,10 +6,30 @@ h1Tag.style.textAlign = "center";
 document.body.appendChild(h1Tag);
 
 // p tag to display code quiz instructions on the starting page
+var p1Tag = document.createElement("p");
+p1Tag.textContent = "Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your quiz time by 5 seconds and penalize your score by 2! Each correct answer adds 5 to your score! Good luck!";
+p1Tag.style.textAlign = "center";
+p1Tag.style.marginLeft = "auto";
+p1Tag.style.marginRight = "auto";
+p1Tag.style.width = "auto";
+p1Tag.style.display = "block";
+document.body.appendChild(p1Tag);
 
 // start quiz button on the starting page
+var startQuizButton = document.createElement("button");
+startQuizButton.textContent = "Start Quiz";
+startQuizButton.style.marginLeft = "auto";
+startQuizButton.style.marginRight = "auto";
+startQuizButton.style.display = "block";
+startQuizButton.setAttribute("id", "startQuiz")
+document.body.appendChild(startQuizButton);
 
 // view high scores link at top left corner
+
+var viewHighScoresPTag = document.createElement("p");
+viewHighScoresPTag.textContent = "View High Scores";
+viewHighScoresPTag.style.position = "fixed";
+viewHighScoresPTag.style.color = "#755c96";
 
 // timer at top right corner
 
