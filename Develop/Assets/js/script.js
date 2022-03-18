@@ -25,18 +25,36 @@ startQuizButton.setAttribute("id", "startQuiz")
 document.body.appendChild(startQuizButton);
 
 // view high scores link at top left corner
-
 var viewHighScoresPTag = document.createElement("p");
 viewHighScoresPTag.textContent = "View High Scores";
 viewHighScoresPTag.style.position = "fixed";
 viewHighScoresPTag.style.color = "#755c96";
+viewHighScoresPTag.style.top = "0";
+viewHighScoresPTag.style.left = "0";
+viewHighScoresPTag.marginTop = "4px";
+viewHighScoresPTag.marginLeft = "4px";
+viewHighScoresPTag.setAttribute("id", "viewHighScoresFromStart");
+document.body.appendChild(viewHighScoresPTag)
 
 // timer at top right corner
+var timerPTag = document.createElement("p");
+timerPTag.textContent = "Time: " + "0";
+timerPTag.style.position = "fixed";
+timerPTag.style.top = "0";
+timerPTag.style.right = "0";
+timerPTag.style.marginTop = "4px";
+timerPTag.style.marginRight = "4px";
+timerPTag.body.appendChild(timerPTag);
 
 // container to hold the questions and answers during the quiz
+var qAndAContainer = document.createElement("div");
+qAndAContainer.style.textAlign = "left";
+qAndAContainer.setAttribute("id", qAndAContainer);
 
 // h2 tag to display each question and all done title
-
+var h2Tag = document.createElement("h2");
+h2Tag.textContent = "";
+h2Tag.setAttribute("id", "titleQuestions")
 // ul to hold li answer buttons 
 
 // p tag for all done page to display final score
@@ -67,20 +85,19 @@ viewHighScoresPTag.style.color = "#755c96";
 
 // function is called when the user clicks the start quiz button
 
-    // initialize variables
+// initialize variables
     
-    // display countdown timer and call the createQuestionButtons function once before getting into the setInterval function to account for the 1 second delay 
+// display countdown timer and call the createQuestionButtons function once before getting into the setInterval function to account for the 1 second delay 
     
-    // if statement tests to make sure the text showing the user's final score is removed if the user decides to take the quiz again
+// if statement tests to make sure the text showing the user's final score is removed if the user decides to take the quiz again
     
-    // if statement tests to make sure the form is removed
+// if statement tests to make sure the form is removed
     
-    // if statement tests to make sure the correct/wrong pop up goes away
+// if statement tests to make sure the correct/wrong pop up goes away
     
-    // interval function 
+// interval function 
     
-         
-    // event listener for when the user clicks the view high scores link during the quiz. The click will send the user to the high scores page and also end the quiz
+// event listener for when the user clicks the view high scores link during the quiz. The click will send the user to the high scores page and also end the quiz
 
 // function creates the multiple choice answer buttons
 
