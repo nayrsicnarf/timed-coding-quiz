@@ -65,8 +65,21 @@ answerUlTag.style.paddingLeft = "0px";
 answerUlTag.setAttribute("id", "answerUlTag");
 
 // p tag for all done page to display final score
+var p2Tag = document.createElement("p");
+p2Tag.style.textAlign = "left";
+p2Tag.setAttribute("id", "p2Tag");
 
 // form for all done page
+var doneForm = document.createElement("form");
+doneForm.setAttribute("method", "post");
+doneForm.setAttribute("id", "doneForm");
+doneForm.textContnet = "Enter Initials: ";
+var doneInput = document.createElement("input");
+doneInput.setAttribute("id", "doneInput");
+var doneButton = document.createElement("button");
+doneButton.setAttribute("id", "submit");
+doneButton.textContent = "SUBMIT";
+doneButton.style.marginLeft = "6px";
 
 // ul to hold high scores list
 
