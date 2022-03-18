@@ -55,7 +55,14 @@ qAndAContainer.setAttribute("id", qAndAContainer);
 var h2Tag = document.createElement("h2");
 h2Tag.textContent = "";
 h2Tag.setAttribute("id", "titleQuestions")
+
 // ul to hold li answer buttons 
+var answerUlTag = document.createElement("ul");
+answerUlTag.textContent = "";
+answerUlTag.textAlign = "left";
+answerUlTag.listStyleType = "none";
+answerUlTag.style.paddingLeft = "0px";
+answerUlTag.setAttribute("id", "answerUlTag");
 
 // p tag for all done page to display final score
 
