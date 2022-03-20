@@ -16,9 +16,9 @@ In this assignment, I was tasked into creating a multiple choice timed quiz usin
 
 ## GitHub Repository and Page
 
-- [GitHub Repository](https://github.com/nayrsicnarf/js-password-generator.git)
+- [GitHub Repository](https://github.com/nayrsicnarf/timed-coding-quiz.git)
 
-- [GitHub Page](https://nayrsicnarf.github.io/js-password-generator/)
+- [GitHub Page](https://nayrsicnarf.github.io/timed-coding-quiz/)
 
 ## Technologies
 
@@ -28,7 +28,7 @@ In this assignment, I was tasked into creating a multiple choice timed quiz usin
 
 ## Installation
 
-To view this webpage on a local machine, pull the code from [GitHub](https://github.com/nayrsicnarf/js-password-generator.git) using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
+To view this webpage on a local machine, pull the code from [GitHub](https://github.com/nayrsicnarf/timed-coding-quiz.git) using Terminal (Mac) or Git (Windows) and use the following (or similar) programs:
 
 - Operating System: macOS Monterey Version 21.1
 - Visual Studio Code: Version 1.64.2
@@ -37,15 +37,18 @@ To view this webpage on a local machine, pull the code from [GitHub](https://git
 
 ## Usage
 
-To view the completed project, visit my [GitHub Page](https://nayrsicnarf.github.io/js-password-generator/) or refer to the [Installation](#installation) section of this README.
+To view the completed project, visit my [GitHub Page](https://nayrsicnarf.github.io/timed-coding-quiz/) or refer to the [Installation](#installation) section of this README.
 
 ## Screenshot
 
-![Password Generator](/Assets/password-generator-screenshot.png)
+![Timed Coding Quiz - Main](/Develop/Assets/images/tcq-main.png)
+![Time Coding Quiz - Question](/Develop/Assets/images/tcq-question.png)
+![Timed Coding Quiz - Done](/Develop/Assets/images/tcq-done.png)
+![Timed Coding Quiz - High Score](/Develop/Assets/images/tcq-hs.png)
 
 ## Credits
 
-This was the third homework assignment as part of the [University of Washington Coding Boot Camp](https://bootcamp.uw.edu/coding/). Some of the information used to complete this project was provided by the instructors of this Boot Camp. But other information were obtained, but not limited to, through the following resources:
+This was the fourth homework assignment as part of the [University of Washington Coding Boot Camp](https://bootcamp.uw.edu/coding/). Some of the information used to complete this project was provided by the instructors of this Boot Camp. But other information were obtained, but not limited to, through the following resources:
 
 - [Google](https://www.google.com/)
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)

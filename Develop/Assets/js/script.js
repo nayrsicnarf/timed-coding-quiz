@@ -123,7 +123,7 @@ var questionsAndAnswers = [ {
         0: "1. Document Observed Module",
         1: "2. Document Object Module",
         2: "3. Document Object Model",
-        3: "4. Doughnuts Oreos Milk",
+        3: "4. Digital Oculus Machine",
         answer: "3. Document Object Model"
     },
     {
@@ -167,20 +167,12 @@ var questionsAndAnswers = [ {
         answer: "4. all of the above"
     },
     {
-        q: "What keyword displays a box requesting user input?",
-        0: "1. console.log",
-        1: "2. prompt",
-        2: "3. confirm",
-        3: "4. alert",
-        answer: "2. prompt"
-    },
-    {
         q: "What does HTML stand for?",
         0: "1. HyperText Makeup Language",
-        1: "2. HydroText Mashup Language",
-        2: "3. HyperText Markup Language",
+        1: "2. HyperText Markup Language",
+        2: "3. HydroText Mashup Language",
         3: "4. HellaTight Massive Language",
-        answer: "3. prompt"
+        answer: "2. HyperText Markup Language"
     },
 ];
 
