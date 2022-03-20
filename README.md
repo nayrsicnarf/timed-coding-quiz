@@ -52,5 +52,5 @@ This was the fourth homework assignment as part of the [University of Washington
 
 - [Google](https://www.google.com/)
 - [W3Schools Online Web Tutorials](https://www.w3schools.com/)
-- [JavaScript Tutorial](hhttps://www.javascripttutorial.net/)
-- [MDN Web Docs](hhttps://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [JavaScript Tutorial](https://www.javascripttutorial.net/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
