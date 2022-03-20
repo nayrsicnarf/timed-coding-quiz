@@ -11,6 +11,17 @@ body {
     margin-right: auto;
 }
 
-h1 {
+h1,
+h2 {
     margin-top: 75px;
+}
+
+p {
+    font-weight: bold;
+}
+
+button {
+    background-color: #755c96;
+    border-radius: 5px;
+    color: white;
 }

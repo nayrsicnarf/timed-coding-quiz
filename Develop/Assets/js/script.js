@@ -7,7 +7,7 @@ document.body.appendChild(h1Tag);
 
 // p tag to display code quiz instructions on the starting page
 var p1Tag = document.createElement("p");
-p1Tag.textContent = "Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your quiz time by 5 seconds and penalize your score by 2! Each correct answer adds 5 to your score! Good luck!";
+p1Tag.textContent = "Try to answer the following code-related questions within the given time limit. Keep in mind that incorrect answers will penalize your quiz time by 5 seconds and penalize your score by 2! Each correct answer adds 5 to your score! Good luck!";
 p1Tag.style.textAlign = "center";
 p1Tag.style.marginLeft = "auto";
 p1Tag.style.marginRight = "auto";
@@ -47,9 +47,9 @@ timerPTag.style.marginRight = "4px";
 document.body.appendChild(timerPTag);
 
 // container to hold the questions and answers during the quiz
-var qAndAContianer = document.createElement("div");
-qAndAContianer.style.textAlign = "left";
-qAndAContianer.setAttribute("id", "qAndAContianer");
+var qAndAContainer = document.createElement("div");
+qAndAContainer.style.textAlign = "left";
+qAndAContainer.setAttribute("id", "qAndAContainer");
 
 // h2 tag to display each question and all done title
 var h2Tag = document.createElement("h2");
@@ -174,6 +174,14 @@ var questionsAndAnswers = [ {
         3: "4. alert",
         answer: "2. prompt"
     },
+    {
+        q: "What does HTML stand for?",
+        0: "1. HyperText Makeup Language",
+        1: "2. HydroText Mashup Language",
+        2: "3. HyperText Markup Language",
+        3: "4. HellaTight Massive Language",
+        answer: "3. prompt"
+    },
 ];
 
 // empty arrays to hold the initials and scores for the high scores page 
@@ -257,15 +265,15 @@ function userTakesQuiz() {
     i++;
     // this if statement tests to make sure the text showing the user's final score is removed if the user decides to take the quiz again
     if (document.querySelector("#p2Tag")) {
-        qAndAContianer.removeChild(p2Tag);
+        qAndAContainer.removeChild(p2Tag);
     }
     // this if statement tests to make sure the form is removed
     if (document.querySelector("#doneForm")) {
-        qAndAContianer.removeChild(doneForm);
+        qAndAContainer.removeChild(doneForm);
     }
     // this if statement tests to make sure the correct/wrong pop up goes away
     if (document.querySelector("#rightOrWrongPTag")) {
-        qAndAContianer.removeChild(rightOrWrongPTag);
+        qAndAContainer.removeChild(rightOrWrongPTag);
     }
     // interval function 
     var timerInterval = setInterval(function () {
@@ -299,7 +307,7 @@ function userTakesQuiz() {
             // test if correct and if so, add to score and set status to true so that the next question can be rendered
             if (element.textContent === questionsAndAnswers[index].answer) {
                 rightOrWrongPTag.textContent = "Correct!";
-                qAndAContianer.appendChild(rightOrWrongPTag);
+                qAndAContainer.appendChild(rightOrWrongPTag);
                 score += 5;
                 status = true;
                 // this if statement tests when the user has reached the last question and has answered it correctly so the quiz can be ended. When the quiz ends, the allDonePage function is called and passed the user's score as an argument
@@ -312,7 +320,7 @@ function userTakesQuiz() {
             } else {
                 countdown -= 5;
                 rightOrWrongPTag.textContent = "Wrong!";
-                qAndAContianer.appendChild(rightOrWrongPTag);
+                qAndAContainer.appendChild(rightOrWrongPTag);
                 // this if statement tests to make sure the user's score is never negative and will otherwise subtract 2
                 if (score <= 0) {
                     score = 0;
@@ -340,7 +348,7 @@ function createQuestionButtons(i) {
     }
     // this if statement tests to make sure the correct/wrong pop up goes away
     if (document.querySelector("#rightOrWrongPTag")) {
-        qAndAContianer.removeChild(rightOrWrongPTag);
+        qAndAContainer.removeChild(rightOrWrongPTag);
     }
 
     // for loop to iterate through the object at index i in the questionsAndAnswers array. i is used as a parameter here that is sent from the userTakesQuiz function. The data-index attribute set here is used in the userTakesQuiz function to compare the answer button pressed by the user with the answer in the questionsAndAnswers array
@@ -353,10 +361,10 @@ function createQuestionButtons(i) {
         liX.appendChild(buttonX);
     }
     // display question and answer buttons to the user 
-    document.body.appendChild(qAndAContianer);
-    qAndAContianer.appendChild(h2Tag);
+    document.body.appendChild(qAndAContainer);
+    qAndAContainer.appendChild(h2Tag);
     h2Tag.textContent = questionsAndAnswers[i].q;
-    qAndAContianer.appendChild(answerUlTag);
+    qAndAContainer.appendChild(answerUlTag);
 }
 
 // this function renders the all done page when the quiz ends. It takes in one argument passed from the userTakesQuiz function which represents the user's score
@@ -367,14 +375,14 @@ function allDonePage(x) {
     }
     // this if statement tests to make sure the correct/wrong pop up goes away
     if (document.querySelector("#rightOrWrongPTag")) {
-        qAndAContianer.removeChild(rightOrWrongPTag);
+        qAndAContainer.removeChild(rightOrWrongPTag);
     }
     // display all done text, score, and form to the user 
     h2Tag.textContent = "All done!";
     p2Tag.textContent = "Your final score is " + x;
-    qAndAContianer.appendChild(h2Tag);
-    qAndAContianer.appendChild(p2Tag);
-    qAndAContianer.appendChild(doneForm);
+    qAndAContainer.appendChild(h2Tag);
+    qAndAContainer.appendChild(p2Tag);
+    qAndAContainer.appendChild(doneForm);
     doneForm.appendChild(doneInput);
     doneForm.appendChild(doneButton);
     // add the score to the highScores array to save user progress 
@@ -403,8 +411,8 @@ function goToHighScoresFromQuiz() {
             answerUlTag.removeChild(answerUlTag.childNodes[0]);
         }
         // remove elements that aren't on the high scores page
-        qAndAContianer.removeChild(h2Tag);
-        document.body.removeChild(qAndAContianer);
+        qAndAContainer.removeChild(h2Tag);
+        document.body.removeChild(qAndAContainer);
         document.body.removeChild(timerPTag);
         document.body.removeChild(viewHighScoresPTag);
         // change title to High Scores and align the text left 
