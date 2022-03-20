@@ -41,10 +41,10 @@ To view the completed project, visit my [GitHub Page](https://nayrsicnarf.github
 
 ## Screenshot
 
-![Timed Coding Quiz - Main](/Develop/Assets/images/tcq-main.png)
-![Time Coding Quiz - Question](/Develop/Assets/images/tcq-question.png)
-![Timed Coding Quiz - Done](/Develop/Assets/images/tcq-done.png)
-![Timed Coding Quiz - High Score](/Develop/Assets/images/tcq-hs.png)
+![Timed Coding Quiz - Main](/Assets/images/tcq-main.png)
+![Time Coding Quiz - Question](/Assets/images/tcq-question.png)
+![Timed Coding Quiz - Done](/Assets/images/tcq-done.png)
+![Timed Coding Quiz - High Score](/Assets/images/tcq-hs.png)
 
 ## Credits
 
